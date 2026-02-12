@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi Valentín, bebé?</title>
+    <!-- CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.6.0/confetti.browser.min.js"></script>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icon -->
+    <link rel="icon" href="imagenes/heart.gif" type="image/gif">
+</head>
+<body>
+    <div class="hearts"></div>
+    <div class="container">
+        <!-- Step 1 -->
+        <div class="step active" id="step1">
+            <img src="imagenes/AshSnow.gif" alt="Gatito lindo" class="cat-img">
+            <h1>¿Quieres ser mi Valentín? 💝</h1>
+            <div class="buttons">
+                <button class="btn btn-yes" onclick="goToStep2()">Sí</button>
+                <button class="btn btn-no" onmouseover="moveButton(this)" onclick="moveButton(this)">No</button>
+            </div>
+        </div>
+
+            <!-- Step 2 -->
+        <div class="step" id="step2">
+                <img src="imagenes/are u sure.gif" alt="Gatito enamorado" class="cat-img">
+                <h1>¿Estás segura de que quieres ser mi Valentín? 😼</h1>
+                <div class="buttons">
+                <button class="btn btn-yes" onclick="goToStep3()">Sí, 100% segura</button>
+                <button class="btn btn-no" onmouseover="moveButton(this)" onclick="moveButton(this)">Déjame pensar...</button>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step" id="step3">
+            <img src="imagenes/Hugging.gif" alt="Gatito enamorado" class="cat-img">
+            <h1>Prométeme que siempre serás mi San Valentín ❤️</h1>
+            <div class="buttons">
+                <button class="btn btn-yes" onclick="finalStep()">Sí, lo prometo</button>
+            </div>
+        </div>
+
+            <div class="final-message">
+                <img src="imagenes/kisses.gif" alt="Besos" class="cat-img">
+                <p>¡vavaavvavav, hiciste que este San Valentín sea muy especial para mí, te amo! 🥰</p>
+                <p style="margin-top: 15px;">Puedes escribirme haciendo clic en el botón de abajo. ¡Te estoy esperando, bebé!</p>
+            </div>
+
+        
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
+
